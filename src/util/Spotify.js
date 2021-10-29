@@ -1,5 +1,5 @@
 const clientId = 'e4b96b9aaa78458b9e7530171997c2ba';
-const redirectUri = 'http://localhost:3000/';
+const redirectUri = window.location.host === 'localhost:3000'? `http://${window.location.host}/` : `http://${window.location.host}/projects/jamming-reactApp.html`;
 
 let accessToken;
 
